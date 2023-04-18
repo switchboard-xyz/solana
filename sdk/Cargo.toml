@@ -46,11 +46,11 @@ bs58 = "0.4.0"
 bytemuck = { version = "1.11.0", features = ["derive"] }
 byteorder = { version = "1.4.3", optional = true }
 chrono = { default-features = false, features = ["alloc"], version = "0.4", optional = true }
-curve25519-dalek = { version = "3.2.1", optional = true }
+curve25519-dalek = { git="https://github.com/switchboard-xyz/sb-curve25519-dalek", branch="3.2.1", optional = true }
 derivation-path = { version = "0.2.0", default-features = false }
 digest = { version = "0.10.1", optional = true }
-ed25519-dalek = { version = "=1.0.1", optional = true }
-ed25519-dalek-bip32 = { version = "0.2.0", optional = true }
+ed25519-dalek = { git="https://github.com/switchboard-xyz/ed25519-dalek",branch="1.0.1", optional = true }
+ed25519-dalek-bip32 = { git="https://github.com/switchboard-xyz/ed25519-dalek-bip32",branch = "0.2.0", optional = true }
 generic-array = { version = "0.14.6", default-features = false, features = ["serde", "more_lengths"], optional = true }
 hmac = "0.12.1"
 itertools =  "0.10.5"
@@ -87,7 +87,7 @@ js-sys = "0.3.59"
 
 [dev-dependencies]
 anyhow = "1.0.58"
-curve25519-dalek = "3.2.1"
+curve25519-dalek = { git="https://github.com/switchboard-xyz/sb-curve25519-dalek", branch="3.2.1"}
 hex = "0.4.3"
 static_assertions = "1.1.0"
 tiny-bip39 = "0.8.2"

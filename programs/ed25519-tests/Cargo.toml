@@ -10,7 +10,7 @@ publish = false
 
 [dev-dependencies]
 assert_matches = "1.5.0"
-ed25519-dalek = "=1.0.1"
+ed25519-dalek = { git="https://github.com/switchboard-xyz/ed25519-dalek",branch="1.0.1"}
 rand = "0.7.0"
 solana-program-test = { path = "../../program-test", version = "=1.15.2" }
 solana-sdk = { path = "../../sdk", version = "=1.15.2" }
